@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>AdminLTE | Calendar</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+       <link href="../css/custom.css" rel="stylesheet" type="text/css" /> 
         <!-- bootstrap 3.0.2 -->
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- font Awesome -->
@@ -23,7 +24,7 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body class="skin-blue">
+    <body class="skin-x">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
             <a href="../index.html" class="logo">
@@ -535,12 +536,14 @@
                     //Random default events
                     events: [
                         {
+                        	id:2154778,
                             title: 'All Day Event',
                             start: new Date(y, m, 1),
                             backgroundColor: "#f56954", //red
                             borderColor: "#f56954" //red
                         },
                         {
+                        	id:2154779,
                             title: 'Long Event',
                             start: new Date(y, m, d - 5),
                             end: new Date(y, m, d - 2),
@@ -548,6 +551,7 @@
                             borderColor: "#f39c12" //yellow
                         },
                         {
+                        	id:2154710,
                             title: 'Meeting',
                             start: new Date(y, m, d, 10, 30),
                             allDay: false,
@@ -555,6 +559,7 @@
                             borderColor: "#0073b7" //Blue
                         },
                         {
+                        	id:2154711,
                             title: 'Lunch',
                             start: new Date(y, m, d, 12, 0),
                             end: new Date(y, m, d, 14, 0),
@@ -563,6 +568,7 @@
                             borderColor: "#00c0ef" //Info (aqua)
                         },
                         {
+                        	id:2154712,
                             title: 'Birthday Party',
                             start: new Date(y, m, d + 1, 19, 0),
                             end: new Date(y, m, d + 1, 22, 30),
@@ -571,10 +577,11 @@
                             borderColor: "#00a65a" //Success (green)
                         },
                         {
+                        	id:2154712,
                             title: 'Click for Google',
                             start: new Date(y, m, 28),
                             end: new Date(y, m, 29),
-                            url: 'http://google.com/',
+                            url: 'http://localhost/pages/calendar.html?id=2154712',
                             backgroundColor: "#3c8dbc", //Primary (light-blue)
                             borderColor: "#3c8dbc" //Primary (light-blue)
                         }
